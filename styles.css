@@ -1,0 +1,391 @@
+/* GENERAL -----------------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+h1 {
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-wrap: nowrap;
+    font-size: 3vw;
+    width: 35%;
+    padding: 5% 0% 3% 5%;
+}
+h2 {
+    text-align: center;
+    font-size: 2vw;
+    padding: 10px 0;
+    color: #fff;
+}
+h3 {
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: normal;
+    white-space: pre-line;
+    padding: 0% 0% 5% 5%;
+}
+p {
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #fff;
+    font-size: 1.5vw;
+    white-space: pre-line;
+    padding: 0% 0% 5% 5%;
+}
+
+/* CSS */
+button {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 40px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: solid;
+  font-weight: bold;
+  overflow-wrap: normal;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+}
+button:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  transition: all 235ms ease-in-out;
+}
+button:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  transition: all 235ms ease-in-out;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* NAVIGATION BAR -----------------------------------*/
+.navbar_section {
+    background: hsl(231, 23%, 12%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    height: 65px;
+    padding: 0px 40px 0px 40px;
+    margin: auto;
+    font-size: 1.2rem;
+    z-index: 999;
+}
+.navbar_title {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navbar_title:hover{ 
+    color: #00e0a8;
+    transition: all 0.3s ease;
+}
+.navbar_links {
+    display: flex;
+    list-style: none;
+}
+.navbar_link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+.navbar_link:hover{ 
+    color: #00e0a8;
+    transition: all 0.3s ease;
+}
+
+/* ABOUT SECTION ------------------------------------*/
+.about_section {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(45deg, hsl(235, 23%, 32%), #00e0a8);
+    justify-content: center;
+    width: 100%;
+} 
+.about_section img {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
+    min-height: 400px;
+    max-width: 600px;
+    max-height: 600px;
+    padding: 30px 30px 30px 30px;
+    border-radius: 50%;
+}
+.about_div_1 {
+    display: grid;
+    align-items: center;
+}
+
+/* PROJECTS SECTION ---------------------------------*/
+.projects_section{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(231, 23%, 12%);
+    width: 100%;
+}
+.projects_section h1{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2% 0% 2% 0%;
+}
+.projects_div_1 {
+    display: inline-block;
+    column-count: 5;
+    column-width: 300px;
+    column-gap: 25px;
+    padding: 0% 0% 3% 0%;
+}
+.project_tile {
+    display: block;
+    background-color: hsl(0, 0%, 100%);
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 1em 1em 1em;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    transition: transform .2s;
+    will-change: transform;
+    cursor: pointer;
+}
+.project_tile:hover {
+    transform: translateY(-4px);
+}
+.project_tile:active{
+    transform: translateY(4px);
+}
+.project_tile img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+.project_tile_description {
+    padding: 15px;
+    text-align: center;
+    text-wrap: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.project_tile_description h3 {
+    color:black;
+}
+
+/* PROJECT POPUPS -----------------------------------*/
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    transition: opacity 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    background: #fff;
+    border-radius: 15px;
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    width: 60%;
+    height: 80%;
+}
+.popup_close {
+    position: absolute;
+    top: -2%;
+    right: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+}
+.popup_close:hover {
+    color: #00e0a8;
+    transition: all 0.3s ease;
+}
+.popup h2 {
+    padding: 0% 0% 0% 5%;
+    text-align: left;
+    margin-top: 2%;
+    color: #000000;
+}
+.popup p {
+    color: #000000;
+    overflow: auto;
+}
+.popup img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* CONTACT SECTION ---------------------------------*/
+.contact_section {
+    background-image: linear-gradient(90deg, hsl(235, 23%, 32%), #00e0a8);
+    display: flex;
+}
+.contact_div_2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2vw;
+    padding: 0% 0% 5% 0%;
+    color: #fff;
+}
+.contact_div_2 h2{
+    text-align: left;
+    padding: 2% 0% 0% 5%;
+}
+.contact_div_2 h3{
+    text-align: left;
+    padding: 2% 0% 0% 5%;
+}
+.contact_div_1 {
+    padding: 10% 10% 0% 20%;
+}
+.contact_div_1 button {
+    width: 200px;
+    height: 275px;
+}
+
+/* MOBILE MODE --------------------------------------*/
+@media screen and (max-width: 960px) {
+    h1 {
+        font-size: 4.5vw;
+    }
+    h2 {
+        font-size: 3.5vw;
+    }
+    h3 {
+        font-size: 3vw;
+    }
+    p {
+        font-size: 2vw;
+    }
+    button {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    .navbar_section {
+        padding: 0px 0px 0px 5px;
+    }
+    .navbar_title {
+        padding-left: 25px;
+    }
+    .navbar_links {
+        background: hsl(231, 23%, 12%);
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 20vh;
+        z-index: -1;
+    }
+    .navbar_links.active {
+        background: hsl(231, 23%, 12%);
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        height: 20vh;
+        font-size: 1.5rem;
+        z-index: -1;
+    }
+    .navbar_link {
+        display: table;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+    .navbar_hamburger .bar {
+        background: #fff;
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    .navbar_hamburger {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 30%);
+    }
+    .navbar_hamburger.is-active .bar:nth-child(2) { /* Rotate two of the hamburger bars into an X, make the other transparent */
+        opacity: 0;
+    }
+    .navbar_hamburger.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .navbar_hamburger.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .about_section img {
+        min-width: 200px;
+        min-height: 200px;
+        padding: 15px 15px 15px 15px;
+    }
+    .projects_div_1 {
+        padding: 0% 10% 3% 10%;
+    }
+    .popup {
+        width: 80%;
+        height: 80%;
+    }
+    .contact_div_1 {
+        padding: 10% 10% 0% 10%;
+    }
+    .contact_div_1 button {
+        width: 120px;
+        height: 157.5px;
+    }
+}
