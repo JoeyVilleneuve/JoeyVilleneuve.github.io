@@ -306,7 +306,7 @@ a {
 }
 
 /* MOBILE MODE --------------------------------------*/
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1200px) {
     h1 {
         font-size: 4.5vw;
     }
