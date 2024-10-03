@@ -394,6 +394,18 @@ a {
         height: auto;
         top: 50%;
     }
+    #popup1 img{
+        width: 95%;
+        height: auto;
+    }
+    #popup2 img{
+        width: 70%;
+        height: auto;
+    }
+    #popup3 img{
+        width: 80%;
+        height: auto;
+    }
     .contact_div_1 {
         padding: 10% 10% 0% 10%;
     }
