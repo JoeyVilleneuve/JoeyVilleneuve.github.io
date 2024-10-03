@@ -188,6 +188,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    height: auto;
     border: 0;
     border-radius: 10px;
 }
@@ -231,7 +232,7 @@ a {
 }
 .popup_close {
     position: absolute;
-    top: -2%;
+    top: 0%;
     right: 30px;
     font-size: 50px;
     font-weight: bold;
@@ -256,11 +257,22 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 0;
     border-radius: 30px;
-    padding: 20px;
-    max-width: 90%;
-    max-height: 90%;
+    padding-top: 5px;
+    width: 80%;
+    height: auto;
+}
+#popup1 img{
+    width: 80%;
+    height: auto;
+}
+#popup2 img{
+    width: 50%;
+    height: auto;
+}
+#popup3 img{
+    width: 60%;
+    height: auto;
 }
 
 /* CONTACT SECTION ---------------------------------*/
@@ -378,8 +390,9 @@ a {
         padding: 0% 10% 3% 10%;
     }
     .popup {
-        width: 80%;
-        height: 80%;
+        width: 90%;
+        height: auto;
+        top: 50%;
     }
     .contact_div_1 {
         padding: 10% 10% 0% 10%;
