@@ -397,14 +397,17 @@ a {
     #popup1 img{
         width: 95%;
         height: auto;
+        margin-top: 5%;
     }
     #popup2 img{
-        width: 90%;
-        height: auto;
-    }
-    #popup3 img{
         width: 80%;
         height: auto;
+        margin-top: 5%;
+    }
+    #popup3 img{
+        width: 90%;
+        height: auto;
+        margin-top: 5%;
     }
     .contact_div_1 {
         padding: 10% 10% 0% 10%;
