@@ -41,28 +41,28 @@ p {
 button {
     align-items: center;
     background: 0 0;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    border-radius: 4px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 10px;
     cursor: pointer;
     display: inline-flex;
     flex-shrink: 0;
     font-size: 2vw;
-    font-weight: bold;
+    font-weight: normal;
     justify-content: center;
     line-height: 1.5;
     overflow: hidden;
     padding: 15px 25px;
     text-overflow: ellipsis;
-    transition: all .10s ease-out;
+    transition: transform .2s;
     white-space: nowrap;
 }
 button:hover {
-    box-shadow: 5px 5px 0 #ffffff;
-    transform: translate(-5px,-5px);
+    transform: translateY(-4px);
 }
-button:focus-visible{
-    outline-offset: 1px;
+button:active{
+    transform: translateY(4px);
 }
 a {
     color: inherit;
