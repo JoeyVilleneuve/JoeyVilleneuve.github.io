@@ -245,6 +245,7 @@ a {
     margin-top: 10px;
     color: #000000;
     overflow: auto;
+    padding-right: 5px;
 }
 .popup img {
     object-fit: cover;
