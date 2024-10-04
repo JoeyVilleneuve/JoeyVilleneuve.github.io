@@ -215,8 +215,9 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
-    max-height: 80%;
+    width: fit-content;
+    height: fit-content;
+    max-height: 85%;
 }
 .popup_div_1 {
     display: flex;
@@ -246,25 +247,14 @@ a {
     overflow: auto;
 }
 .popup img {
+    object-fit: cover;
     display: block;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 30px;
-    width: 80%;
-    height: auto;
-}
-#popup1 img{
-    width: 80%;
-    height: auto;
-}
-#popup2 img{
-    width: 55%;
-    height: auto;
-}
-#popup3 img{
-    width: 65%;
-    height: auto;
+    max-height: auto;
+    max-width: 95%;
 }
 
 /* CONTACT SECTION ---------------------------------*/
@@ -374,25 +364,13 @@ a {
         padding: 0% 10% 3% 10%;
     }
     .popup {
-        margin-top: 0px;
         width: 95%;
         height: auto;
         width: 95%;
         max-height: 60%;
     }
-    #popup1 img{
-        width: 95%;
-        height: auto;
-        margin-top: 5px;
-    }
-    #popup2 img{
-        width: 85%;
-        height: auto;
-        margin-top: 5px;
-    }
-    #popup3 img{
-        width: 95%;
-        height: auto;
-        margin-top: 5px;
+    .popup img {
+        max-height: auto;
+        max-width: 95%;
     }
 }
