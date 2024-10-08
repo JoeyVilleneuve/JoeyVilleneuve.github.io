@@ -257,6 +257,9 @@ a {
     max-height: auto;
     max-width: 95%;
 }
+#popup2 img {
+    max-width: 85%
+}
 
 /* CONTACT SECTION ---------------------------------*/
 .contact_section {
@@ -373,5 +376,8 @@ a {
     .popup img {
         max-height: auto;
         max-width: 95%;
+    }
+    #popup2 img {
+        max-width: 85%
     }
 }
