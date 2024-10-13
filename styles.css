@@ -305,6 +305,10 @@ a {
     p {
         font-size: 3vw;
     }
+    button {
+        font-size: 3vw;
+        padding: 15px 25px;
+    }
     .navbar_section {
         padding: 0px 0px 0px 0px;
     }
