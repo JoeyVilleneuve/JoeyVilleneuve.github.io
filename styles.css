@@ -130,6 +130,10 @@ a {
     display: grid;
     align-items: center;
 }
+.about_section h2 {
+    text-align: left;
+    padding: 0% 0% 1% 5%;
+}
 
 /* PROJECTS SECTION ---------------------------------*/
 .projects_section{
