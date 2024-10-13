@@ -294,10 +294,10 @@ a {
 /* MOBILE MODE --------------------------------------*/
 @media screen and (max-width: 960px) {
     h1 {
-        font-size: 4.5vw;
+        font-size: 5.5vw;
     }
     h2 {
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
     h3 {
         font-size: 3vw;
