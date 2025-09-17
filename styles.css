@@ -132,7 +132,7 @@ a {
     padding: 0% 0% 1% 5%;
 }
 .about_section img {
-    width: 80%;
+    width: 90%;
     max-width: 250px;
     max-height: 250px;
     border-radius: 50%;
@@ -266,14 +266,17 @@ a {
     margin-bottom: 20px;
     font-size: 1.25rem;
 }
+.popup_img_container {
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
 .popup img {
     object-fit: contain;
     display: block;
     width: 100%;
     height: auto;
     max-height: 50vh;
-    border-radius: 15px;
-    margin-bottom: 20px;
 }
 
 /* CONTACT SECTION ---------------------------------*/
