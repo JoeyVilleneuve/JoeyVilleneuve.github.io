@@ -461,7 +461,7 @@ a {
     .contact_div_1_buttons button {
         flex: 1 1 0;
         min-width: 0;
-        font-size: 1.2rem;
+        font-size: 1rem;
         white-space: nowrap;
     }
 }
