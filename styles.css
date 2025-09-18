@@ -459,9 +459,10 @@ a {
         margin-bottom: 10px;
     }
     .contact_div_1_buttons button {
+        padding: 12px 16px;
         flex: 1 1 0;
         min-width: 0;
-        font-size: 1rem;
+        font-size: 1.3rem;
         white-space: nowrap;
     }
 }
