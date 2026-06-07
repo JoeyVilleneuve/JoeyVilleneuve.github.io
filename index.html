@@ -4,407 +4,127 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joey's Portfolio</title>
+    <title>Joey Villeneuve - Software Developer</title>
+    <meta name="description" content="Joey Villeneuve is a software developer with a Computer Science degree and an HCI master's from Carleton University. He builds clean, well-architected systems people enjoy using, with a soft spot for games." />
+
+    <meta property="og:title" content="Joey Villeneuve — Software Developer" />
+    <meta property="og:description" content="I build clean, well-architected systems people enjoy using." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./files/PFP.png" />
+
+    <link rel="icon" type="image/png" href="./files/pfp_icon.png" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="/files/pfp_icon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat:wght@400..700&family=Handlee&family=Indie+Flower&family=Oooh+Baby&family=Patrick+Hand&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 
 <body id="top">
 
+    <a class="skip_link" href="#projects">Skip to projects</a>
+
     <!-- NAVIGATION BAR -------------------------------------------------->
-    <nav class="navbar_section">
-        <a href="#top" class="navbar_title">Joey Villeneuve</a>
-        <div class="navbar_hamburger" aria-label="Menu" role="button" tabindex="0">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul class="navbar_links">
-            <li><a href="#projects" class="navbar_link">Projects</a></li>
-            <li><a href="#contact" class="navbar_link">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="navbar_section">
+        <nav class="navbar_inner wrap" aria-label="Primary">
+            <a href="#top" class="navbar_title">Joey Villeneuve<span>.</span></a>
+            <button class="navbar_hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar_links" id="primary-menu">
+                <li><a href="#projects" class="navbar_link">Projects</a></li>
+                <li><a href="#publications" class="navbar_link">Publications</a></li>
+                <li><a href="#contact" class="navbar_link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- ABOUT SECTION --------------------------------------------------->
-    <section class="about_section" id="about">
-        <div class="about_div_2">
-            <img src="./files/PFP.png" alt="Portrait of Joey Villeneuve" />
-        </div>
-        <div class="about_div_1">
-            <h1>Joey Villeneuve</h1>
-            <div class="about_slogan">
-                Creating lasting experiences with the latest tech.
-            </div>
-            <h3>Hi there! I'm a graduate student in Human-Computer Interaction (HCI) at Carleton University, with an honours degree in Computer Science. As a member of the ALT Games Lab, led by Dr. Edward Melcer, I research the intersection of technology and creativity through the lens of serious games. I'm passionate about building memorable interactive experiences that engage and inspire. Check out some of my past projects below!</h3>
-        </div>
-    </section>
+    <main>
 
-    <!-- PROJECTS SECTION ------------------------------------------------>
-    <section class="projects_section" id="projects">
-        <h1>Project Gallery</h1>
-        <div class="projects_div_1">
-
-             <!-- Feyrun -->
-            <a href="#feyrun" id="feyrun-tile">
-                <div class="project_tile">
-                    <img src="./files/feyrun_cover.png" alt="Feyrun Cover" />
-                    <div class="project_tile_description">
-                        <h3>Endless Runner Platformer Game</h3>
+        <!-- ABOUT / HERO ------------------------------------------------>
+        <section class="about_section" id="about">
+            <div class="about_inner">
+                <div class="about_panel">
+                    <div class="about_div_1">
+                        <span class="eyebrow">Software Developer · HCI · Ottawa</span>
+                        <h1>Joey <span class="surname">Villeneuve</span></h1>
+                        <p class="about_lead">Building for both sides of the screen.</p>
+                        <p class="about_bio">I'm a Computer Science and Human-Computer Interaction graduate from Carleton University. HCI taught me to design for the person in front of the screen, while CS taught me to architect what runs behind it. I believe great software requires both: an exceptional experience for the user, and elegant engineering behind the scenes. I focus primarily on games, but I apply that same intentionality to my work with tools, data, and interactive applications.</p>
+                    </div>
+                    <div class="about_div_2">
+                        <div class="about_photo">
+                            <img src="./files/PFP.png" alt="Portrait of Joey Villeneuve" />
+                        </div>
                     </div>
                 </div>
-            </a>
+            </div>
+        </section>
 
-            <!-- Dungeon Warden -->
-            <a href="#dungeon-warden" id="dungeon-warden-tile">
-                <div class="project_tile">
-                    <img src="./files/dungeon_warden_cover.png" alt="Dungeon Warden Cover" />
-                    <div class="project_tile_description">
-                        <h3>Dungeon Real-Time Strategy Game</h3>
-                    </div>
+        <!-- PROJECTS --------------------------------------------------->
+        <section class="projects_section" id="projects">
+            <div class="wrap">
+                <div class="section_head">
+                    <span class="section_index">01 / Projects</span>
+                    <h2>Things I've Built</h2>
+                    <p>A range of games, tools, and systems from coursework, the lab, and side projects. Select any project to see it in motion.</p>
                 </div>
-            </a>
 
-            <!-- Mesh Simplification -->
-            <a href="#mesh-simplification" id="mesh-simplification-tile">
-                <div class="project_tile">
-                    <img src="./files/simplification_cover.png" alt="Mesh Simplification Cover" />
-                    <div class="project_tile_description">
-                        <h3>Rectilinear Grid-Based Mesh Simplification</h3>
-                    </div>
+                <div class="filter_bar" role="group" aria-label="Filter projects by category"></div>
+                <p class="filter_count" aria-live="polite"></p>
+
+                <div class="projects_grid"></div>
+
+                <noscript>
+                    <p class="noscript_note">This gallery loads with JavaScript enabled. The full project list is also available on my GitHub.</p>
+                </noscript>
+            </div>
+        </section>
+
+        <!-- PUBLICATIONS ----------------------------------------------->
+        <section class="publications_section" id="publications">
+            <div class="wrap">
+                <div class="section_head">
+                    <span class="section_index">02 / Publications</span>
+                    <h2>Research &amp; Publications</h2>
+                    <p>Co-authored work from my time in HCI research.</p>
                 </div>
-            </a>
+                <ul class="pub_list"></ul>
+                <noscript>
+                    <p class="noscript_note">Publications load with JavaScript enabled.</p>
+                </noscript>
+            </div>
+        </section>
 
-            <!-- Let It Ride -->
-            <a href="#let-it-ride" id="let-it-ride-tile">
-                <div class="project_tile">
-                    <img src="./files/let_it_ride_cover.png" alt="Let It Ride Cover" />
-                    <div class="project_tile_description">
-                        <h3>Gambling Simulation Game</h3>
+        <!-- CONTACT ---------------------------------------------------->
+        <section class="contact_section" id="contact">
+            <div class="wrap">
+                <div class="contact_panel">
+                    <span class="section_index">03 / Contact</span>
+                    <h2>Get in touch</h2>
+                    <div class="contact_buttons">
+                        <a href="./files/joey_villeneuve_resume.pdf" target="_blank" rel="noopener" class="btn btn_primary">Résumé</a>
+                        <a href="https://www.linkedin.com/in/joeyvilleneuve/" target="_blank" rel="noopener" class="btn btn_ghost">LinkedIn</a>
+                        <a href="https://github.com/JoeyVilleneuve" target="_blank" rel="noopener" class="btn btn_ghost">GitHub</a>
                     </div>
+                    <p class="contact_meta">
+                        <a href="mailto:joeyvilleneuve2002@gmail.com">joeyvilleneuve2002@gmail.com</a><br />
+                        Ottawa, ON, Canada
+                    </p>
                 </div>
-            </a>
-
-            <!-- Bloxorzinator -->
-            <a href="#bloxorzinator" id="bloxorzinator-tile">
-                <div class="project_tile">
-                    <img src="./files/bloxorzinator_cover.png" alt="Bloxorzinator Cover" />
-                    <div class="project_tile_description">
-                        <h3>Arduino Bloxorz Controller</h3>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Buy Canadian Simulator -->
-            <a href="#buy-canadian" id="buy-canadian-tile">
-                <div class="project_tile">
-                    <img src="./files/buy_canadian_simulator_cover.png" alt="Buy Canadian Simulator Cover" />
-                    <div class="project_tile_description">
-                        <h3>Buy Canadian Serious Game</h3>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Sunken Mariner -->
-            <a href="#sunken-mariner" id="sunken-mariner-tile">
-                <div class="project_tile">
-                    <img src="./files/submarine3D_cover.png" alt="Submarine 3D Cover" />
-                    <div class="project_tile_description">
-                        <h3>Underwater Collectathon Game</h3>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Submarine Survival -->
-            <a href="#submarine-survival" id="submarine-survival-tile">
-                <div class="project_tile">
-                    <img src="./files/submarine2D_cover.png" alt="Submarine 2D Cover" />
-                    <div class="project_tile_description">
-                        <h3>Underwater Arcade Shooter Game</h3>
-                    </div>
-                </div>
-            </a>
-
-            <!-- GridLocked -->
-            <a href="#gridlocked" id="gridlocked-tile">
-                <div class="project_tile">
-                    <img src="./files/gridlocked_cover.png" alt="GridLocked Cover" />
-                    <div class="project_tile_description">
-                        <h3>Educational Math Game</h3>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Nutrition Attrition -->
-            <a href="#nutrition-attrition" id="nutrition-attrition-tile">
-                <div class="project_tile">
-                    <img src="./files/nutrition_attrition_cover.png" alt="Nutrition Attrition Cover" />
-                    <div class="project_tile_description">
-                        <h3>Picnic Real-Time Strategy Game</h3>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Football Database -->
-            <a href="#football-db" id="football-db-tile">
-                <div class="project_tile">
-                    <img src="./files/database_cover.png" alt="Database Cover" />
-                    <div class="project_tile_description">
-                        <h3>PostgreSQL Football Database</h3>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Simulations -->
-            <a href="#simulations" id="simulations-tile">
-                <div class="project_tile">
-                    <img src="./files/simulation_cover.png" alt="Simulation Cover" />
-                    <div class="project_tile_description">
-                        <h3>Hardware Simulations</h3>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Art Gallery Website -->
-            <a href="#art-gallery" id="art-gallery-tile">
-                <div class="project_tile">
-                    <img src="./files/website_cover.png" alt="Website Cover" />
-                    <div class="project_tile_description">
-                        <h3>Art Gallery Website</h3>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION ------------------------------------------------->
-    <section class="contact_section" id="contact">
-        <div class="contact_div_1">
-            <h1>Contact</h1>
-            <div class="contact_div_1_buttons">
-                <a href="./files/joey_villeneuve_resume.pdf" target="_blank"><button>Resume</button></a>
-                <a href="https://www.linkedin.com/in/joeyvilleneuve/"><button>LinkedIn</button></a>
-                <a href="https://github.com/JoeyVilleneuve"><button>GitHub</button></a>
             </div>
-            <h3>joeyvilleneuve2002@gmail.com</h3>
-            <h3>Ottawa, ON, Canada</h3>
-        </div>
-    </section>
+        </section>
 
-    <!-- POPUPS ---------------------------------------------------------->
+    </main>
 
-    <!-- Feyrun -->
-    <div id="feyrun" class="overlay">
-        <div class="popup">
-            <div class="popup_div_1">
-                <h2>Feyrun</h2>
-                <a class="popup_close" href="#feyrun-tile">&times;</a>
-            </div>
+    <!-- Dialogs are generated into this container by app.js -->
+    <div class="modal_root"></div>
 
-            <div class="popup_gif_wrapper">
-                <img src="./files/feyrun.gif" alt="Feyrun GIF" />
-            </div>
+    <footer class="site_footer">
+        © 2026 Joey Villeneuve · Built with HTML, CSS, and JavaScript.
+    </footer>
 
-            <p>An endless-runner game where players navigate procedural environments to achieve a high score. It was developed as part of an HCI study that experimentally manipulated perceived control over outcomes to examine how it affects failure attributions and persistence.</p>
-        </div>
-    </div>
-    
-    <!-- Dungeon Warden -->
-    <div id="dungeon-warden" class="overlay">
-        <div class="popup">
-            <div class="popup_div_1">
-                <h2>Dungeon Warden</h2>
-                <a class="popup_close" href="#dungeon-warden-tile">&times;</a>
-            </div>
-
-            <div class="popup_gif_wrapper">
-                <img src="./files/dungeon_warden.gif" alt="Dungeon Warden GIF" />
-            </div>
-
-            <p>My fourth-year game project where you strategically defend your dungeon's treasure from waves of adventurers by placing various troops and traps. Features 8 unique unit types, dynamic AI with pathfinding, physics-enabled combat, and more. Built in GDScript using Godot.</p>
-        </div>
-    </div>
-
-    <!-- Mesh Simplification -->
-    <div id="mesh-simplification" class="overlay">
-        <div class="popup">
-            <div class="popup_div_1">
-                <h2>Mesh Simplification Algorithm</h2>
-                <a class="popup_close" href="#mesh-simplification-tile">&times;</a>
-            </div>
-
-            <div class="popup_gif_wrapper">
-                <img src="./files/simplification.gif" alt="Mesh Simplification GIF" />
-            </div>
-
-            <p>A grid-based vertex clustering algorithm that reduces a 3D mesh to its essential form while preserving as much fidelity as possible. Demonstrates optimization techniques for complex models. Written in Python using NumPy.</p>
-        </div>
-    </div>
-
-    <!-- Let It Ride -->
-    <div id="let-it-ride" class="overlay">
-        <div class="popup">
-            <div class="popup_div_1">
-                <h2>Let It Ride</h2>
-                <a class="popup_close" href="#let-it-ride-tile">&times;</a>
-            </div>
-
-            <div class="popup_gif_wrapper">
-                <img src="./files/let_it_ride.gif" alt="Let It Ride GIF" />
-            </div>
-
-            <p>A simulation of the popular poker-based casino game "Let It Ride", focusing on game logic, odds calculation, and user interaction. Built in GDScript using Godot.</p>
-        </div>
-    </div>
-
-    <!-- Bloxorzinator -->
-    <div id="bloxorzinator" class="overlay">
-        <div class="popup">
-            <div class="popup_div_1">
-                <h2>Arduino Bloxorz Controller</h2>
-                <a class="popup_close" href="#bloxorzinator-tile">&times;</a>
-            </div>
-
-            <div class="popup_gif_wrapper">
-                <img src="./files/bloxorzinator.gif" alt="Arduino Bloxorz Controller GIF" />
-            </div>
-
-            <p>A wireless, Arduino-powered alternative controller designed to physically replicate the movement mechanics of the classic Coolmath game Bloxorz.</p>
-        </div>
-    </div>
-
-    <!-- Buy Canadian -->
-    <div id="buy-canadian" class="overlay">
-        <div class="popup">
-            <div class="popup_div_1">
-                <h2>Buy Canadian Simulator</h2>
-                <a class="popup_close" href="#buy-canadian-tile">&times;</a>
-            </div>
-
-            <div class="popup_gif_wrapper">
-                <img src="./files/buy_canadian_simulator.gif" alt="Buy Canadian Simulator GIF" />
-            </div>
-
-            <p>A prototype that teaches players how to identify and prioritize Canadian products: navigate busy grocery store aisles and purchase local goods efficiently. Built in GDScript using Godot.</p>
-        </div>
-    </div>
-
-    <!-- Sunken Mariner -->
-    <div id="sunken-mariner" class="overlay">
-        <div class="popup">
-            <div class="popup_div_1">
-                <h2>The Sunken Mariner</h2>
-                <a class="popup_close" href="#sunken-mariner-tile">&times;</a>
-            </div>
-
-            <div class="popup_gif_wrapper">
-                <img src="./files/submarine3D.gif" alt="3D Platformer GIF" />
-            </div>
-
-            <p>My third-year game project where you explore the seafloor to collect parts and repair your submarine. Features handcrafted hierarchical models, shaders, lighting, particle systems, and screen-space effects. Built in C++ using OpenGL.</p>
-        </div>
-    </div>
-
-    <!-- Submarine Survival -->
-    <div id="submarine-survival" class="overlay">
-        <div class="popup">
-            <div class="popup_div_1">
-                <h2>Submarine Survival</h2>
-                <a class="popup_close" href="#submarine-survival-tile">&times;</a>
-            </div>
-
-            <div class="popup_gif_wrapper">
-                <img src="./files/submarine2D.gif" alt="2D Top-Down Shooter GIF" />
-            </div>
-
-            <p>My second-year game project where you fend off waves of increasingly numerous sea monsters. Includes handcrafted hierarchical sprites, shaders, and particle effects. Built in C++ using OpenGL; all art by Paige Yoshida.</p>
-        </div>
-    </div>
-
-    <!-- GridLocked -->
-    <div id="gridlocked" class="overlay">
-        <div class="popup">
-            <div class="popup_div_1">
-                <h2>GridLocked</h2>
-                <a class="popup_close" href="#gridlocked-tile">&times;</a>
-            </div>
-
-            <div class="popup_gif_wrapper">
-                <img src="./files/gridlocked.gif" alt="GridLocked GIF" />
-            </div>
-
-            <p>A prototype designed to enhance children’s numerical skills and spatial reasoning through puzzle-solving with numerical tiles. Built in GDScript using Godot.</p>
-        </div>
-    </div>
-
-    <!-- Nutrition Attrition -->
-    <div id="nutrition-attrition" class="overlay">
-        <div class="popup">
-            <div class="popup_div_1">
-                <h2>Nutrition Attrition</h2>
-                <a class="popup_close" href="#nutrition-attrition-tile">&times;</a>
-            </div>
-
-            <div class="popup_gif_wrapper">
-                <img src="./files/nutrition_attrition.gif" alt="Nutrition Attrition GIF" />
-            </div>
-
-            <p>My first-year game project where you deploy troops strategically to win picnic-themed battles. Emphasizes real-time strategy mechanics and resource management. Built in GDScript using Godot.</p>
-        </div>
-    </div>
-
-    <!-- Football Database -->
-    <div id="football-db" class="overlay">
-        <div class="popup">
-            <div class="popup_div_1">
-                <h2>PostgreSQL Football Database</h2>
-                <a class="popup_close" href="#football-db-tile">&times;</a>
-            </div>
-
-            <div class="popup_gif_wrapper">
-                <img src="./files/database.gif" alt="Database GIF" />
-            </div>
-
-            <p>A comprehensive football database containing over 500,000 categorized events from 1,228 players across 140 matches in 21 competitions. Loadable into PostgreSQL via a Python script.</p>
-        </div>
-    </div>
-
-    <!-- Simulations -->
-    <div id="simulations" class="overlay">
-        <div class="popup">
-            <div class="popup_div_1">
-                <h2>Elevator &amp; EEG Headset Simulations</h2>
-                <a class="popup_close" href="#simulations-tile">&times;</a>
-            </div>
-
-            <div class="popup_gif_wrapper">
-                <img src="./files/simulation.gif" alt="Simulation GIF" />
-            </div>
-
-            <p>Precise simulations of an elevator system and an EEG therapy device. Includes detailed UML documentation and accurate behaviour modelling. Written in C++ using Qt Creator.</p>
-        </div>
-    </div>
-
-    <!-- Art Gallery -->
-    <div id="art-gallery" class="overlay">
-        <div class="popup">
-            <div class="popup_div_1">
-                <h2>Art Gallery Website</h2>
-                <a class="popup_close" href="#art-gallery-tile">&times;</a>
-            </div>
-
-            <div class="popup_gif_wrapper">
-                <img src="./files/website.gif" alt="Art Gallery Website GIF" />
-            </div>
-
-            <p>A prototype website for user-uploaded art with profiles, follows, likes, comments, and more. Built using HTML, CSS, JavaScript, Express, MongoDB, and PUG.</p>
-        </div>
-    </div>
-
-    <!-- SCRIPT ---------------------------------------------------------->
     <script src="app.js"></script>
 </body>
+
 </html>
